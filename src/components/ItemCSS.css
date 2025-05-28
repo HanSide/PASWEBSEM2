@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #d4f7ff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.form-box,
+.list-box {
+  background-color: #ffe0b2;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 45%;
+}
+
+.form-box h2,
+.list-box h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #999;
+  background: #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background: #ddd;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.list-box {
+  overflow-y: auto;
+}
+
+.komik-card {
+  display: flex;
+  gap: 10px;
+  background: white;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.komik-card img {
+  width: 70px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.komik-info {
+  flex: 1;
+}
+
+.judul-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.judul-row h3 {
+  margin: 0;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.meta {
+  color: gray;
+  font-size: 0.8em;
+}
+
+.desc {
+  font-size: 0.85em;
+  margin: 5px 0;
+}
+
+.status {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: green;
+}
+
+.status-tag {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background-color: red;
+  color: white;
+  font-size: 0.7em;
+  padding: 2px 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+form > div {
+  margin-bottom: 15px;
+}
+.form-box {
+  background-color: #ffe0b2;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  min-width: 300px; 
+}

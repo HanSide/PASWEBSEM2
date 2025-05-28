@@ -3,11 +3,11 @@ import ItemImage from "./ItemImage";
 import ItemBody from "./ItemBody";
 import DeleteButton from "./DeleteButton";
 
-const MenuItem = ({ id, judul, sinopsis, genre, author, status, sampul, onDeleteHandler }) => {
+const MenuItem = ({ id, judul, genre, sinopsis, status, author, sampul, onDeleteHandler }) => {
   return (
     <div className="komik-card">
       <ItemImage sampul={sampul} judul={judul} />
-      <ItemBody judul={judul} author={author} genre={genre} sinopsis={sinopsis} status={status} />
+      <ItemBody judul={judul} genre = {genre} sinopsis={sinopsis} author={author} status={status} />
       <DeleteButton id={id} onDelete={onDeleteHandler} />
     </div>
   );

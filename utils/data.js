@@ -7,7 +7,7 @@
             genre : "Romance, Comedy, Slice of Life",
             author : "JIXKSEE",
             status : "Ongoing",
-            sampul : "public/Image/bias.jpg",
+            sampul : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn09f1S0EMLImNlAPItl92chKrNUZphwe7lw&s",
         },
            {
             id : 2,
@@ -16,7 +16,7 @@
             genre : "Fantasy, Isekai, Comedy, Romance",
             author : "Minari Kururu",
             status : "Ongoing",
-            sampul : "public/Image/vilaines99.jpg",
+            sampul : "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1680235211i/124928605.jpg",
         },
            {
             id : 3,
@@ -25,7 +25,7 @@
             genre: "Romance, Drama, School Life",
             author: "Io Sakisaka",
             status: "Completed",
-            sampul: "public/Image/blue.jpg"
+            sampul: "https://upload.wikimedia.org/wikipedia/id/1/14/Ao_Haru_Ride_Volume_1.jpg"
         },          
     ]
 }

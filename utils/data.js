@@ -2,7 +2,7 @@
     return [
         {
             id : 1,
-            judul : "My Bias gets on the last train",
+            judul : "My Bias Gets On The Last Train",
             sinopsis : "Penggemar menemukan arti persahabatan dan rasa kekaguman selama mengejar kereta terakhir.",
             genre : "Romance, Comedy, Slice of Life",
             author : "JIXKSEE",

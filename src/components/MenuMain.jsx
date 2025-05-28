@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import dataKomik from "../../utils/data";
 import MenuInput from "./MenuInput";
 import MenuList from "./MenuList";
-import "../components/ItemCSS.css";
+import "./ItemCSS.css";
 
 const MenuMain = () => {
   const [komikList, setKomikList] = useState(dataKomik());
@@ -15,10 +15,15 @@ const MenuMain = () => {
     setKomikList([...komikList, newKomik]);
   };
 
+  const deleteKomik = (id) => {
+    const filtered = komikList.filter((komik) => komik.id !== id);
+    setKomikList(filtered);
+  };
+
   return (
     <div className="container">
       <MenuInput onAdd={addKomik} />
-      <MenuList komikList={komikList} />
+      <MenuList komikList={komikList} onDeleteHandler={deleteKomik} />
     </div>
   );
 };

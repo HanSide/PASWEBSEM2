@@ -8,15 +8,32 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 40px;
+  height: 100vh; 
+  box-sizing: border-box;
 }
 
-.form-box,
+.form-box {
+  background-color: #ffe0b2;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  min-width: 300px;
+  height: fit-content; 
+  position: sticky;
+  top: 40px; 
+  align-self: flex-start;
+}
+
+
 .list-box {
   background-color: #ffe0b2;
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 45%;
+  height: calc(100vh - 80px); 
+  overflow-y: auto;
 }
 
 .form-box h2,
@@ -36,15 +53,16 @@ label {
   margin: 10px 0 5px;
 }
 
-input {
+input, select, option {
   padding: 10px;
   border: 1px solid #999;
   background: #ddd;
   border-radius: 4px;
   margin-bottom: 10px;
-  width: 100%; 
-  box-sizing: border-box; 
+  width: 100%;
+  box-sizing: border-box;
 }
+
 
 
 
@@ -63,12 +81,14 @@ button {
 
 .komik-card {
   display: flex;
+  align-items: flex-start;
   gap: 10px;
   background: white;
   margin: 15px 0;
   padding: 10px;
   border-radius: 20px;
   position: relative;
+  transition: transform 0.8s ease, box-shadow 0.2s ease;
 }
 
 .komik-card img {
@@ -95,6 +115,7 @@ button {
 .author {
   font-weight: bold;
   font-size: 0.8em;
+  margin-right: 20px;
 }
 
 .meta {
@@ -113,20 +134,6 @@ button {
   color: green;
 }
 
-.status-tag {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  background-color: red;
-  color: white;
-  font-size: 0.7em;
-  padding: 2px 10px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-}
-
 form > div {
   margin-bottom: 15px;
 }
@@ -137,4 +144,40 @@ form > div {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 45%;
   min-width: 300px; 
+}
+.delete-btn {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 2px 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-weight: bold;
+  font-size: 0.7em;
+  cursor: pointer;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: static; 
+}
+
+.delete-btn:hover {
+  background-color: #ff1744;
+  transform: rotate(180deg) scale(1.05);
+}
+
+.delete-btn:active {
+  transform: rotate(180deg) scale(0.95);
+}
+.komik-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.list-box:hover .komik-card {
+  opacity: 0.5;
+ 
+}
+
+.list-box:hover .komik-card:hover {
+  opacity: 1;
 }

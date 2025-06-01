@@ -8,7 +8,7 @@ const ItemBody = ({ judul, author, genre, sinopsis, status }) => {
         <span className="author">{author}</span>
       </div>
       <p className="meta">{genre}</p>
-      <p className="desc">{sinopsis.slice(0, 100)}...</p>
+      <p className="desc">{sinopsis.slice(0, 150)}...</p>
       <div className="status">{status}</div>
     </div>
   );

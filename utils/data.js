@@ -15,7 +15,7 @@
             sinopsis : "Setelah bereinkarnasi ke dalam game otome yang dia benci, gadis ini menyadari bahwa dia adalah villainess level 99 yang harus dikalahkan di akhir game. Tapi daripada tunduk pada takdir, dia memutuskan untuk jadi final boss yang bahkan pahlawan pun takut lawan!",
             genre : "Fantasy, Isekai, Comedy, Romance",
             status : "Ongoing",
-             author : "Minari Kururu",
+            author : "Minari Kururu",
             sampul : "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1680235211i/124928605.jpg",
         },
            {

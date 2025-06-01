@@ -74,7 +74,7 @@
         .komik-card {
             display: flex;
             align-items: flex-start;
-            gap: 10px;
+            gap: 6px;
             background: white;
             margin: 15px 0;
             padding: 10px;
@@ -117,11 +117,13 @@
         .meta {
             color: gray;
             font-size: 0.8em;
+            margin: 0;
+            line-height: 1.2em;
         }
 
         .desc {
             font-size: 0.85em;
-            margin: 5px 0;
+            margin: 6px 0 0 0;
             word-break: break-word;
         }
 
@@ -282,6 +284,7 @@
 
             .judul-row h3 {
                 font-size: 1.1em;
+                  margin: 0 0 5px 0;
             }
 
             .desc {

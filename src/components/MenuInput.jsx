@@ -17,15 +17,15 @@ class MenuInput extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   
-  handleChange(event) {
-    const { name, value } = event.target;
+  handleChange(e) {
+    const { name, value } = e.target;
     this.setState({
       [name]: value
     });
   }
   
-  handleSubmit(event) {
-    event.preventDefault();
+  handleSubmit(e) {
+    e.preventDefault();
     this.props.onAdd(this.state);
     this.setState({
       judul: '',
@@ -57,10 +57,12 @@ class MenuInput extends React.Component {
                   }}
                   onInput={(e) => e.target.setCustomValidity('')}
                 >
+
                   <option value="">-- Pilih Status --</option>
                   <option value="Ongoing">Ongoing</option>
                   <option value="Completed">Completed</option>
                 </select>
+
               ) : field === 'genre' ? (
                 <select
                   name="genre"
@@ -72,6 +74,7 @@ class MenuInput extends React.Component {
                   }}
                   onInput={(e) => e.target.setCustomValidity('')}
                 >
+
                   <option value="">-- Pilih Genre --</option>
                   <option value="Action">Action</option>
                   <option value="Adventure">Adventure</option>
@@ -85,6 +88,7 @@ class MenuInput extends React.Component {
                   <option value="Supernatural">Supernatural</option>
                   <option value="Thriller">Thriller</option>
                 </select>
+
               ) : (
                 <input
                   type="text"
@@ -99,10 +103,10 @@ class MenuInput extends React.Component {
                   }}
                   onInput={(e) => e.target.setCustomValidity('')}
                 />
+
               )}
             </div>
           ))}
-          
           <button type="submit">Tambah</button>
         </form>
       </div>
